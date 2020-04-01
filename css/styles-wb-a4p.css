@@ -2001,17 +2001,17 @@ body.article.missing-banner .article-title .at-theme { margin-top: -5px; }
 .social-sharing .inside { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; }
 .social-sharing .inside .inside { padding: 0; }
 
-.sr-title { margin-right: 20px; font-family: 'AttractiveCond', sans-serif; font-size: 18px; line-height: 1.23; color: #152345; font-weight: 800; text-transform: uppercase; }
-.sr-title:last-child { margin-right: 0; }
+.social-sharing .sr-title { margin-right: 20px; font-family: 'AttractiveCond', sans-serif; font-size: 18px; line-height: 1.23; color: #152345; font-weight: 800; text-transform: uppercase; }
+.social-sharing .sr-title:last-child { margin-right: 0; }
 
-.sr-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 -10px; }
-.sr-item { padding: 0 10px; border: 0; margin: 0; }
-.sr-item a { position: relative; display: block; width: 50px; height: 50px; padding: 0; border: 0; border-radius: 100%; background: #5EAD6F; font-size: 15px; color: #fff; -webkit-transition: opacity .3s; -o-transition: opacity .3s; transition: opacity .3s; }
-.sr-item a:hover { opacity: .8; }
-.sr-item .icon { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-.sr-item-txt { font-size: 0; }
-.sr-item .icon-twitter { font-size: 13px; }
-.sr-item .icon-email { font-size: 12px; }
+.social-sharing .sr-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; margin: 0 -10px; }
+.social-sharing .sr-item { padding: 0 10px; border: 0; margin: 0; }
+.social-sharing .sr-item a { position: relative; display: block; width: 50px; height: 50px; padding: 0; border: 0; border-radius: 100%; background: #5EAD6F; font-size: 15px; color: #fff; -webkit-transition: opacity .3s; -o-transition: opacity .3s; transition: opacity .3s; }
+.social-sharing .sr-item a:hover { opacity: .8; }
+.social-sharing .sr-item .icon { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.social-sharing .sr-item-txt { font-size: 0; }
+.social-sharing .sr-item .icon-twitter { font-size: 13px; }
+.social-sharing .sr-item .icon-email { font-size: 12px; }
 
 @media (max-width: 1024px) {
     .social-sharing { padding: 60px 0; }
