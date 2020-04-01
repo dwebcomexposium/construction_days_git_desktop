@@ -1809,7 +1809,7 @@ body.article.missing-banner .article-title .at-theme { margin-top: -5px; }
 
 .article-title .at-content { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; position: relative; }
 
-.article-title .at-main-title { max-width: 760px; margin: 0 auto 31px; font-size: 50px; line-height: 1.11; font-weight: 900; text-transform: uppercase; text-align: center; }
+.article-title .at-main-title, .faq-main-title { max-width: 760px; margin: 0 auto 31px; font-size: 50px; line-height: 1.11; font-weight: 900; text-transform: uppercase; text-align: center; border: 0; color: #fff; }
 
 /*.article-title .at-main-title:last-child { margin-bottom: 0; }*/
 
@@ -1819,7 +1819,7 @@ body.article.missing-banner .article-title .at-theme { margin-top: -5px; }
 .at-illust + .at-content > .at-theme { position: absolute; top: 100%; left: 50%; z-index: 5; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); font-size: 13px; }
 
 @media (max-width: 1024px) {
-    .article-title .at-main-title { max-width: 600px; font-size: 40px; }
+    .article-title .at-main-title, .faq-main-title { max-width: 600px; font-size: 40px; }
 }
 
 /* ------------------------------------------------------------ *\
@@ -1986,6 +1986,11 @@ body.article.missing-banner .article-title .at-theme { margin-top: -5px; }
     .faq { margin: 0; }
     .faq .inside { padding: 0; }
 }
+
+
+.fs-item { padding: 5px 15px; }
+.faq-sub-title { text-align: center; margin-top: 0; }
+.fc-item-link { color: #18274E !important; }
 
 /* ------------------------------------------------------------ *\
     Social Sharing
