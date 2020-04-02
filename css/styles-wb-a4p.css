@@ -1809,7 +1809,7 @@ body.article.missing-banner .article-title .at-theme { margin-top: -5px; }
 
 .article-title .at-content { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; position: relative; }
 
-.article-title .at-main-title, .faq-main-title { max-width: 760px; margin: 0 auto 31px; font-size: 50px; line-height: 1.11; font-weight: 900; text-transform: uppercase; text-align: center; border: 0; color: #fff; }
+.article-title .at-main-title, .faq-main-title, body.error404 h1, body.search h1 { max-width: 760px; margin: 0 auto 31px; font-size: 50px; line-height: 1.11; font-weight: 900; text-transform: uppercase; text-align: center; border: 0; color: #fff; }
 
 /*.article-title .at-main-title:last-child { margin-bottom: 0; }*/
 
@@ -2206,16 +2206,67 @@ html[lang='en'] .an-item-next .an-item-link .icon:before { content: 'Next articl
 }
 
 
+/* ------------------------------------------------------------ *\
+    404
+\* ------------------------------------------------------------ */
+.error404 #zone1 { display: none; }
+.error-page { padding: 15px 0; }
+.error-page h1, .error-page h3 { text-align: center;  }
+.error-page .intro {margin-top: 30px; }
+.error-page .global-search-form { display: none; }
+.error-page .intro p.txtcenter, .error-page figure.center { padding-bottom: 20px; }
+
+.error-page #zone1 .section-intro { display: none; }
+body.error404 h1 { margin: 0 auto 50px; padding-top: 75px; }
+
+
+
+/* ------------------------------------------------------------ *\
+    Search page
+\* ------------------------------------------------------------ */
+/*.search-result { max-width: 960px; margin: 0 auto; padding-top: 200px; }*/
+
+
+body.search h1 { margin-top: 50px; }
+body.search .sr-nb-result { display: block; color: #fff; font-size: 14px; }
+body.search .sr-term, body.search .gsf-submit-text { color: #5ead6f; }
+body.search .sr-item-content { padding: 30px 20px 20px 10px; }
+
+
+
+.search-result .sr-item-txt { color: #152345; font-size: 13px; }
+.search-result h2 { text-align: left; padding-top: 30px; font-size: 33px; line-height: 1.12; font-weight: 500; letter-spacing: 0.03em; text-transform: uppercase; }
+.search-result .sr-group-exponent div.sr-item-img { display: none; }
+.search-result h3 a:hover, .search-result h3 a { color: #152345; line-height: .8; font-size: 24px; font-weight: 700; text-transform: uppercase; padding-bottom: 17px; }
+.search-result h3 { color: #152345; line-height:32px; font-size: 23px; font-weight: 500; padding-bottom: 7px; }
+.search-result h3 a:hover { text-decoration: none; }
+.search-result img.la-item-img {margin: 0; border-radius: 10px 0 0 10px;}
+.search-result mark.sr-term {color: #5ead6f; font-weight: 700; }
+.search-result small.sr-nb-result {font-size: 14px; font-weight: 300; text-transform: uppercase; letter-spacing: 0.05em; }
+.search-result .sr-group-exponent .sr-item-content {padding: 0; width: 100%; }
+.search-result .sr-group-exponent .sr-item-content p {margin: 0; }
+.search-result .sr-item {margin: 20px 0 50px; display: block; border-bottom: none; padding: 0; border-radius: 10px;
+-webkit-box-shadow: 10px 15px 30px rgba(0,0,0,.22); box-shadow: 10px 15px 30px rgba(0,0,0,.22); }
+
+
+.search-result .global-search-form { margin: 0 0 35px 0; }
+.search-result .global-search-form form { display: block; }
+.search-result .global-search-form form:after { content: ''; display: block; width: 100%; clear: both; }
+.search-result .gsf-fields { background-color: white; border: 1px solid #152345; width: 60%; margin: auto; padding: 5px 0 0 20px; margin-top: 50px; border-radius: 30px; }
+.search-result .gsf-input::-webkit-input-placeholder { color: rgba(0, 0, 0, .5) !important; font-style: normal !important; }
+.gsf-input::-moz-placeholder { color: rgba(0, 0, 0, .5) !important; font-style: normal !important; }
+.gsf-input:-moz-placeholder { color: rgba(0, 0, 0, .5) !important; font-style: normal !important; }
+.gsf-input:-ms-input-placeholder { color: rgba(0, 0, 0, .5) !important; font-style: normal !important; }
+.search-result button.gsf-submit-btn {background-color: transparent; color: #302e2e; font-size: 23px; margin-top: -4px; }
+.search-result input#search.gsf-input.inputs.form-txt {width: 90%; border: 0; color: #000; background-color: transparent; font-size: 17px; }
+.search-result p.sr-noresult-title {padding: 50px 0; }
+#main .search-result .tt-dropdown-menu {width:413px!important; margin-left: 0px; z-index: 999; margin-top: 20px!important; left: 30%; top: auto!important}
+
+
+
 
 /* ------------------------------------------------------------ *\
     Div
 \* ------------------------------------------------------------ */
 
 .article_list .intro img { margin: auto 0; float: none; margin-bottom: 30px; border-radius: 10px!important; }
-
-
-
-    
-    
-    
-    
