@@ -1193,6 +1193,11 @@ body.front .is-stuck.site-banner { padding: 31px 0 0; }
 .link-view-all:focus:before,
 .link-view-all:hover:before { width: 100%; opacity: 1; }
 
+.partlink { text-align: center;  position: relative; padding: 25px 0 50px; margin-bottom:50px ; background: #F1F1F1;  }
+
+
+
+
 /* ------------------------------------------------------------ *\
     Actus
 \* ------------------------------------------------------------ */
@@ -1479,7 +1484,7 @@ body.front .is-stuck.site-banner { padding: 31px 0 0; }
     Partner
 \* ------------------------------------------------------------ */
 
-.front .partner { position: relative; padding: 54px 0 117px; margin: 32px 0 91px !important; background: #F1F1F1; }
+.front .partner { position: relative; padding: 54px 0 20px; margin: 32px 0 0 !important; background: #F1F1F1; }
 .front .partner .main-title-with-link { margin-bottom: 27px; text-align: center; }
 .front .partner .main-title-with-link:last-child { margin-bottom: 0; }
 .front .partner .main-title-with-link > .main-title { float: none; }
@@ -1814,7 +1819,7 @@ body.article.missing-banner .article-title .at-theme { margin-top: -5px; }
 
 .article-title .at-content { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; position: relative; }
 
-.article-title .at-main-title, .faq-main-title, body.error404 h1, body.search h1, body.catalogue h1 { max-width: 760px; margin: 0 auto 31px; font-size: 50px; line-height: 1.11; font-weight: 900; text-transform: uppercase; text-align: center; border: 0; color: #fff; }
+.article-title .at-main-title, .faq-main-title, body.error404 h1, body.search h1, body.catalogue h1, body.partner h1 { max-width: 760px; margin: 0 auto 31px; font-size: 50px; line-height: 1.11; font-weight: 900; text-transform: uppercase; text-align: center; border: 0; color: #fff; }
 
 /*.article-title .at-main-title:last-child { margin-bottom: 0; }*/
 
@@ -2266,6 +2271,19 @@ body.search .sr-item-content { padding: 30px 20px 20px 10px; }
 .search-result input#search.gsf-input.inputs.form-txt {width: 90%; border: 0; color: #000; background-color: transparent; font-size: 17px; }
 .search-result p.sr-noresult-title {padding: 50px 0; }
 #main .search-result .tt-dropdown-menu {width:413px!important; margin-left: 0px; z-index: 999; margin-top: 20px!important; left: 30%; top: auto!important}
+
+
+/* ------------------------------------------------------------ *\
+    Partner page 
+\* ------------------------------------------------------------ */
+body.partner .pl-item { padding: 40px 0; }
+body.partner .pl-item-read-more { margin-top: 20px; }
+body.partner .block-page.partner-list { margin-top: 50px; }
+body.partner .pl-item-illust { border-radius: 10px; margin-right: 40px; border: 1px solid #dddddd; padding: 20px; }
+body.partner .site-banner .intro p { margin-bottom: 20px; }
+
+
+
 
 /* ------------------------------------------------------------ *\
     Catalogue 
@@ -2778,3 +2796,10 @@ button.js-mySelection + a:hover { margin-left: 11px;  }
 \* ------------------------------------------------------------ */
 
 .article_list .intro img { margin: auto 0; float: none; margin-bottom: 30px; border-radius: 10px!important; }
+
+
+
+    
+    
+    
+  
