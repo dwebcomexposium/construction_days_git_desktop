@@ -1833,9 +1833,8 @@ body.article.missing-banner .article-title .at-theme { margin-top: -5px; }
 
 .article-title .at-content { -webkit-box-ordinal-group: 2; -ms-flex-order: 1; order: 1; position: relative; }
 
-.article-title .at-main-title, .faq-main-title, body.error404 h1, body.search h1, body.catalogue h1, body.partner h1 { max-width: 760px; margin: 0 auto 31px; font-size: 50px; line-height: 1.11; font-weight: 900; text-transform: uppercase; text-align: center; border: 0; color: #fff; }
+.article-title .at-main-title, .faq-main-title, body.error404 h1, body.search h1, body.catalogue h1, body.partner h1, body.sitemap h1, body.page-events h1 { max-width: 760px; margin: 0 auto 31px; font-size: 50px; line-height: 1.11; font-weight: 900; text-transform: uppercase; text-align: center; border: 0; color: #fff; }
 
-/*.article-title .at-main-title:last-child { margin-bottom: 0; }*/
 
 .article-title .at-publication { display: none; }
 
@@ -1924,6 +1923,8 @@ body.article.missing-banner .article-title .at-theme { margin-top: -5px; }
 
 .article-content .cl-item-email,
 .article-content .cl-item-phone { position: relative; padding-left: 24px; margin: 0; font-size: 14px; line-height: 1.72; }
+
+.article-content .cl-item-phone span[itemprop='telephone'] { color:#1B2955!important }
 
 .article-content .cl-item-email .label,
 .article-content .cl-item-phone .label { position: absolute; top: 13px; left: 0; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); background-size: cover; background-position: center; background-repeat: no-repeat; font-size: 0; }
@@ -2243,6 +2244,32 @@ html[lang='en'] .an-item-next .an-item-link .icon:before { content: 'Next articl
 .error-page #zone1 .section-intro { display: none; }
 body.error404 h1 { margin: 0 auto 50px; padding-top: 75px; }
 
+/* ------------------------------------------------------------ *\
+    Sitemap
+\* ------------------------------------------------------------ */
+#main .sitemap {  padding-top: 60px; }
+
+.block-page.sitemap .inside { width: 840px; }
+
+body.sitemap h1 { margin-top: 50px; }
+
+
+.sitemap ul.content-list-bullet li a {color: #18274E; }
+a.sm-item-title {text-align: left; font-family: 'Gotham', sans-serif; font-weight: 900; text-transform: uppercase; color: #18274E; border-bottom: 1px solid rgba(108, 193, 189, 0.20); padding-bottom: 20px; margin-bottom: 30px; }
+
+a.sm-item-link {text-decoration: none; }
+a.sm-item-link:hover {color: #5ead6f!important; }
+
+
+ul.content-list-bullet { padding: 0; margin: 0 0 84px; text-align: left; }
+ul.content-list-bullet li:before { display: none; }
+ul.content-list-bullet li { position: relative; padding-left: 26px; }
+ul.content-list-bullet li:after { content: ''; position: absolute; width: 9px; height: 9px; top: 7px; left: 0; border-radius: 50%; background: #5ead6f; }
+ul.content-list-bullet li + li { margin-top: 9px; }
+ul.content-list-bullet ul { padding: 9px 0 0 10px; margin-bottom: 0; }
+ul.content-list-bullet ul li { padding-left: 14px; }
+ul.content-list-bullet ul li + li { margin-top: 3px; }
+ul.content-list-bullet ul li:after { width: 6px; height: 1px; top: 10px; border-radius: 0; background: #1c294b; }
 
 
 /* ------------------------------------------------------------ *\
@@ -2323,9 +2350,8 @@ body.partner .site-banner .intro p { margin-bottom: 20px; }
     Catalogue 
 \* ------------------------------------------------------------ */
 
-
-
 body.catalogue { background : transparent; font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 1.5;  }
+.mod-catal [class^="btn"], .mod-catal .btn { font-family: 'Roboto', sans-serif;  }
 body.catalogue h1 { margin-top: 50px; }
 body.catalogue .site-banner .block-title { display: none; }
 body.catalogue .site-banner p { text-align: center; }
@@ -2378,7 +2404,7 @@ body.catalogue .edito.mod-catal .inside {padding: 0 0 10px 0;}
 .is-premium .catal-ex-item-title a { color : #fff !important; background-color:#5ead6f ; padding: 4px 13px; margin-top: 17px; display: inline-block; }
 .is-premium .catal-ex-item-title {font-size: 35px!important; }
 body:not(.front) .mod-catal .catal-ex-item-img,
-body:not(.front) .mod-catal .catal-prd-item-img, body:not(.front) .mod-catal .catal-ex-item-img { height : 200px; width : 200px; display: block; border-radius: 20px;  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.07); line-height: 190px; text-align: center; background: #fff; margin-right: 28px; }
+body:not(.front) .mod-catal .catal-prd-item-img, body:not(.front) .mod-catal .catal-ex-item-img, .catalogue .catal-ed-main img, .catalogue .catal-edp-item img { height : 200px; width : 200px; display: block; border-radius: 20px;  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.07); line-height: 190px; text-align: center; background: #fff; margin-right: 28px; }
 .mod-catal .catal-ex-item-desc,
 .mod-catal .catal-prd-item-desc { font-size : 16px; margin-right : 27%; }
 .mod-catal .catal-ex-item-txt,
@@ -2414,7 +2440,7 @@ body:not(.front) .mod-catal .catal-prd-item-img, body:not(.front) .mod-catal .ca
 .mod-catal .catal-ed-main-title .qty-round-big,
 .mod-catal .catal-prd-main-title .qty-round-big { display : none; }
 .mod-catal .catal-ed-main,
-.mod-catal .catal-prd-main { background : transparent; border : 0 none; padding : 0; }
+.mod-catal .catal-prd-main { background : transparent; border : 0 none; padding : 0; margin: 40px 0 60px 0; }
 .mod-catal .catal-ed-main .catal-ed-main-desc-title,
 .mod-catal .catal-ed-main .catal-ed-main-stand-title,
 .mod-catal .catal-ed-main .catal-prd-main-desc-title,
@@ -2432,7 +2458,7 @@ body:not(.front) .mod-catal .catal-prd-item-img, body:not(.front) .mod-catal .ca
 .mod-catal .catal-ed-main .catal-prd-main-stand-title,
 .mod-catal .catal-prd-main .catal-ed-main-stand-title,
 .mod-catal .catal-prd-main .catal-prd-main-stand-title { color : #152345; padding: 0; }
-.mod-catal .catal-ed-main .catal-ed-main-stand-ref { font-size: 25px; margin-top: 5px; font-weight: 300; color: #152345; }
+.mod-catal .catal-ed-main .catal-ed-main-stand-ref { font-size: 22px; margin-top: 5px; font-weight: 300; color: #152345; }
 .mod-catal .catal-ed-main .catal-ed-main-desc-content,
 .mod-catal .catal-ed-main .catal-prd-main-desc-content,
 .mod-catal .catal-prd-main .catal-ed-main-desc-content,
@@ -2516,7 +2542,7 @@ a.btn-primary.btn-medium:hover {background: none; padding-top: 4px; }
 .mod-catal.catal-nav-ex .catal-nav-ex-more-link:hover .icon-catal,
 .mod-catal.catal-nav-ex .catal-nav-ex-more-link:hover span { color : #5ead6f; }
 .mod-catal.catal-other-ex,
-.mod-catal.catal-other-prd { margin : 60px 0; }
+.mod-catal.catal-other-prd { margin : 40px 0; }
 .mod-catal.catal-other-ex h2,
 .mod-catal.catal-other-prd h2 { text-align : left; line-height: 47px; font-size: 30px; font-weight: 700; border-bottom: 1px solid #F7F9FE; }
 .mod-catal.catal-other-ex .catal-other-ex-item,
@@ -2560,7 +2586,7 @@ a.btn-primary.btn-medium {float: right; }
 .mod-catal.catal-other-ex .catal-other-ex-media,
 .mod-catal.catal-other-ex .catal-other-prd-media,
 .mod-catal.catal-other-prd .catal-other-ex-media,
-.mod-catal.catal-other-prd .catal-other-prd-media { display : block; }
+.mod-catal.catal-other-prd .catal-other-prd-media { display : block; border-radius: 10px;  box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.07); line-height: 190px; text-align: center; background: #fff; }
 .mod-catal.catal-other-ex .catal-other-ex-txt,
 .mod-catal.catal-other-ex .catal-other-prd-txt,
 .mod-catal.catal-other-prd .catal-other-ex-txt,
@@ -2629,8 +2655,8 @@ a.btn-primary.btn-medium {float: right; }
 .mod-catal .esf-search-line #esf_simple_search { border : 1px solid #b9b9b9; border-right : 0 none; font-size : 14px; margin-right : 0; padding-bottom : 7px; padding-top : 8px; }
 .mod-catal .esf-search-line #esf-btn-search { background : #5ead6f; border : 0 none; font-size : 14px; font-weight : 600; text-transform : none; padding: 0 10px; color: #fff; border-radius: 0 30px 30px 0; text-transform: uppercase; }
 .mod-catal .esf-search-line #esf-btn-search:hover { background : #5ead6f; }
-.mod-catal .esf-search-plus { bottom : auto; line-height : 13px; margin-left : 10px; position : inherit; right : 0; text-align : left; text-transform: uppercase; font-size: 11px; padding-top: 18px; letter-spacing: 1px; width: auto; }
-.mod-catal .esf-search-plus .esf-search-plus-txt { text-decoration : none; font-size: 11px; }
+.mod-catal .esf-search-plus { bottom : auto; line-height : 13px; margin-left : 7px; position : inherit; right : 0; text-align : left; text-transform: uppercase; font-size: 11px; padding-top: 18px; letter-spacing: 1px; width: auto; }
+.mod-catal .esf-search-plus .esf-search-plus-txt { text-decoration : none; font-size: 9px; line-height: 1; }
 .mod-catal .esf-search-plus:after { display : none; }
 .mod-catal .form-select { border : 1px solid #b9b9b9; }
 .mod-catal .form-select select { font-size : 14px; }
@@ -2655,7 +2681,7 @@ a.btn-primary.btn-medium {float: right; }
 .mod-catal .esf-results-zone .esf-results-alpha-filter .current { background : #fff; color : #5ead6f; }
 .mod-catal .esf-results-zone .esf-results-alpha-filter a { color : #fff; text-decoration : none; }
 .mod-catal .esf-results-zone .esf-results-alpha-filter a { color : #fff; text-decoration : none; }
-.mod-catal .esf-search-plus { padding-top: 12px; margin-left: 15px; }
+.mod-catal .esf-search-plus { padding-top: 10px; margin-left: 10px; }
 
 
 .mod-catal.catal-results { margin-top : 0!important; }
@@ -2806,7 +2832,7 @@ button.js-mySelection + a:hover { margin-left: 11px;  }
 /*div*/
 .catalogue .block.block-page.social-sharing, .catalogue .catal-results-display {display: none!important; }
 .catalogue .pagination .pagin-item + .pagin-item { margin-left: 10px; }
-.catalogue .catal-ed-main img, .catalogue .catal-edp-item img { float: left; }
+.catalogue .catal-ed-main img, .catalogue .catal-edp-item img { float: left;  height: auto; padding: 20px 15px; margin-right: 40px; }
 .catalogue .catal-edp-item img {padding-right: 30px; }
 .catalogue .catal-ed-pr-date { color: #5ead6f!important; }
 .catalogue a.btn-primary span.txt-btn { font-size: 13px!important; font-weight: 400; margin-top: 5px; }
@@ -2823,6 +2849,61 @@ button.js-mySelection + a:hover { margin-left: 11px;  }
 .catalogue .pagination .pagin-item.pagin-prev { margin: 0 10px 0 0; padding-top: 5px; float: left; }
 
 
+
+/* ------------------------------------------------------------ *\
+    Event calendar
+\* ------------------------------------------------------------ */
+.page-events .catal-ex-item-stand-item {background-color: #1c294b; margin: 10px 0; padding: 7px 14px; }
+.page-events .catal-ex-item-stand-item p.date_event {font-style: normal!important; font-size: 14px; font-weight: 300; line-height: 1; color: #fff;  }
+/*.catal-nav-ex, .mod-catal.catal-nav-affix {display: none; }*/
+.page-events .slider { padding: 0; display: flex; justify-content: center; padding: 20px 0; }
+.page-events .slider .la-item-img { border-radius: 20px; margin: 0; padding: 0; }
+.event-view-full .mod-catal h1, .catal-ex-details .mod-catal h1 {text-align: left!important; }
+.mod-catal .btn-primary.ac-js-switcher-remote {background: none!important; }
+
+.event-type-li:before, .persons-event:before  {
+    list-style: none;
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    border: 3px solid #6cc1bd!important;
+    margin-right: .5rem;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.mod-catal .evd-infos-theme .evd-infos-theme-item:before, .mod-catal .evd-infos-type .evd-infos-type-item:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    border: 2px solid #6cc1bd;
+    margin-right: .5rem;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.page-events .site-wrapper  { margin: 30px 0; }
+.page-events .layout-2-col  { max-width: 1160px; margin: 0 auto; }
+
+.mod-catal h2, .mod-catal .h2-like { border: 0; padding-top: 20px; padding-bottom: 0!important; }
+.place_event { display: inline-block; font-weight: 700; font-size: 20px; margin:10px 0 10px 10px; padding-bottom: 20px; }
+
+body.page-events #zone3 {display: none; }
+
+
+
+/*nav catalogue*/
+.mod-catal.catal-nav-ex .btn-medium {background: none!important;  }
+.mod-catal.catal-nav-ex .btn-medium:hover {padding-top: 0!important; }
+.mod-catal.catal-nav-ex .catal-nav-ex-link {margin-right: 20px!important; margin-left: 20px!important; }
+
+.mod-catal .catal-ed-main .catal-ed-main-stand-ref .icon-catal { color: #fcd139; }
+
+.catal-nav-affix, .page-events .catal-nav-ex { display: none; }
+
+
+
 /* ------------------------------------------------------------ *\
     Div
 \* ------------------------------------------------------------ */
@@ -2830,7 +2911,3 @@ button.js-mySelection + a:hover { margin-left: 11px;  }
 .article_list .intro img { margin: auto 0; float: none; margin-bottom: 30px; border-radius: 10px!important; }
 
 
-
-    
-    
-    
