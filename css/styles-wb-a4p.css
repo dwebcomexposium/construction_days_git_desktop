@@ -689,7 +689,7 @@ body.front .is-stuck.site-banner { padding: 31px 0 0; }
     Main Navigation
 \* ------------------------------------------------------------ */
 
-.main-navigation { z-index: 100; width: calc(100% - 300px); padding: 0; margin-top: -13px; margin-left: auto; background: none; font-family: 'AttractiveCond', sans-serif; font-size: 12px; line-height: 1.25; font-weight: 800; letter-spacing: .2em; -webkit-box-shadow: none; box-shadow: none; -webkit-transition: margin .2s; -o-transition: margin .2s; transition: margin .2s; }
+.main-navigation { z-index: 100; width: calc(100% - 300px); padding: 0; margin-top: -13px; margin-left: auto; background: none; font-family: 'AttractiveCond', sans-serif; font-size: 14px; line-height: 1.25; font-weight: 800; letter-spacing: .17em; -webkit-box-shadow: none; box-shadow: none; -webkit-transition: margin .2s; -o-transition: margin .2s; transition: margin .2s; }
 
 .mn-menu-line { display: block; border-bottom: 0; }
 
@@ -710,6 +710,9 @@ body.front .is-stuck.site-banner { padding: 31px 0 0; }
 
 
 /*  Submenu 1  */
+ .mn-menu-submenu { font-size: 12px; }
+
+
 .mn-item-lvl-1.mn-item-has-submenu:after { content: ''; position: absolute; bottom: -30px; left: 50%; z-index: 505; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); opacity: 0; visibility: hidden; width: 0; height: 0; border-style: solid; border-width: 0 7.5px 8px 7.5px; border-color: transparent transparent #ffffff transparent; -webkit-transition: opacity .3s, visibility .3s, bottom .3s; -o-transition: opacity .3s, visibility .3s, bottom .3s; transition: opacity .3s, visibility .3s, bottom .3s; }
 .mn-item-lvl-1.mn-item-has-submenu:hover:after { bottom: -15px; opacity: 1; visibility: visible; }
 .mn-item-lvl-1.mn-item-has-submenu:hover > .mn-menu-submenu { margin-top: 15px; opacity: 1; visibility: visible; }
@@ -2906,5 +2909,4 @@ body.page-events #zone3 {display: none; }
 \* ------------------------------------------------------------ */
 
 .article_list .intro img { margin: auto 0; float: none; margin-bottom: 30px; border-radius: 10px!important; }
-
 
