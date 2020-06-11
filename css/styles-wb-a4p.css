@@ -858,17 +858,16 @@ body.front .is-stuck.site-banner { padding: 31px 0 0; }
 .sticky .ql-item:first-child { background-color: #E26C5B; }
 .sticky .ql-item:first-child a:before { width: 21px; height: 32px; background-image: url(images/badge-white.svg); }
 
-.sticky .ql-item:nth-child(2) { background-color: #76C6F0; }
-.sticky .ql-item:nth-child(2) a:before { width: 26px; height: 26px; background-image: url(images/clock-white.svg); }
+.sticky .ql-item:nth-child(2) { background-color: #5EAD6F; }
+.sticky .ql-item:nth-child(2) a:before { width: 31px; height: 19px; background-image: url(images/stand-white.svg); }
 
-.sticky .ql-item:nth-child(3) { background-color: #5EAD6F; }
-.sticky .ql-item:nth-child(3) a:before { width: 23px; height: 29px; background-image: url(images/pin-alt-white.svg); }
+.sticky .ql-item:nth-child(3) { background-color: #76C6F0; }
+.sticky .ql-item:nth-child(3) a:before { width: 32px; height: 29px; background-image: url(images/scroll-white.svg);  }
 
-.sticky .ql-item:nth-child(4) { background-color: #828BC1; }
-.sticky .ql-item:nth-child(4) a:before { width: 32px; height: 29px; background-image: url(images/scroll-white.svg); }
+.sticky .ql-item:nth-child(4) { background-color: #152345; }
+.sticky .ql-item:nth-child(4) a:before { width: 29px; height: 30px; background-image: url(images/person-white.svg); }
 
-.sticky .ql-item:nth-child(5) { background-color: #152345; }
-.sticky .ql-item:nth-child(5) a:before { width: 29px; height: 30px; background-image: url(images/person-white.svg); }
+
 
 .sticky .btn-primary { position: relative; display: block; min-width: auto; width: 70px; padding: 53px 3px 18px; border: 0; border-radius: 0; background: none; font-family: 'AttractiveCond', sans-serif; font-size: 10px; line-height: 1; font-weight: 800; letter-spacing: .03em; }
 .sticky .btn-primary:before { opacity: 1; background-color: transparent; }
@@ -2892,7 +2891,6 @@ button.js-mySelection + a:hover { margin-left: 11px;  }
 body.page-events #zone3 {display: none; }
 
 
-
 /*nav catalogue*/
 /*.mod-catal.catal-nav-ex .btn-medium {background: none!important;  }
 .mod-catal.catal-nav-ex .btn-medium:hover {padding-top: 0!important; }*/
@@ -2908,5 +2906,5 @@ body.page-events #zone3 {display: none; }
     Div
 \* ------------------------------------------------------------ */
 
-.article_list .intro img { margin: auto 0; float: none; margin-bottom: 30px; border-radius: 10px!important; }
-
+.article_list .intro img { margin: auto 0; float: none; margin-bottom: 30px; border-radius: 10px!important; }    
+.front .block-page .focus1+.focus1 a.externe.lien1 { background-color: #E26C5B; }  
