@@ -1229,7 +1229,7 @@ body.front .is-stuck.site-banner { padding: 31px 0 0; }
 .actus .la-list > .la-column { width: 60%; padding: 0 20px; }
 
 .actus .la-item .la-item-img-wrapper { overflow: hidden; }
-.actus .la-item .la-item-img { width: 100%; margin: 0; -webkit-transition: -webkit-transform .3s; transition: -webkit-transform .3s; -o-transition: transform .3s; transition: transform .3s; transition: transform .3s, -webkit-transform .3s; }
+.actus .la-item .la-item-img { height: 100%; width: auto; margin: 0; -webkit-transition: -webkit-transform .3s; transition: -webkit-transform .3s; -o-transition: transform .3s; transition: transform .3s; transition: transform .3s, -webkit-transform .3s; }
 .actus .la-item:hover .la-item-img { -webkit-transform: scale(1.05); -ms-transform: scale(1.05); transform: scale(1.05); }
 .actus .la-item:hover .link-read-more { color: #243746; }
 .actus .la-item:hover .link-read-more:after { right: -5px; background: #243746; }
@@ -1747,7 +1747,7 @@ body.article_list .list-articles .la-item:hover .link-read-more { color: #243746
 body.article_list .list-articles .la-item:hover .link-read-more:after { right: -5px; background: #243746; }
 
 body.article_list .list-articles .la-item-img-wrapper { width: 360px; overflow: hidden; }
-body.article_list .list-articles .la-item-img { float: none; min-width: 100%; max-width: inherit; min-height: 100%; margin: 0; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; -o-transition: transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; }
+body.article_list .list-articles .la-item-img { float: none; min-width: 0; max-width: inherit; min-height: 100%; margin: 0; -webkit-transition: -webkit-transform .4s; transition: -webkit-transform .4s; -o-transition: transform .4s; transition: transform .4s; transition: transform .4s, -webkit-transform .4s; }
 
 body.article_list .list-articles .la-item-content { width: calc(100% - 360px); padding: 35px 41px; margin: auto; font-size: 14px; line-height: 1.72; }
 
@@ -2907,4 +2907,5 @@ body.page-events #zone3 {display: none; }
 \* ------------------------------------------------------------ */
 
 .article_list .intro img { margin: auto 0; float: none; margin-bottom: 30px; border-radius: 10px!important; }    
-.front .block-page .focus1+.focus1 a.externe.lien1 { background-color: #E26C5B; }  
+.front .block-page .focus1+.focus1 a.externe.lien1 { background-color: #E26C5B; }   
+    
