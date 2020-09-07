@@ -2907,7 +2907,7 @@ body.page-events #zone3 {display: none; }
 \* ------------------------------------------------------------ */
 
 .article_list .intro img { margin: auto 0; float: none; margin-bottom: 30px; border-radius: 10px!important; }    
-.front .block-page .focus1+.focus1 a.externe.lien1 { background-color: #E26C5B; }   
+.front .block-page .focus1+.focus1 a.lien1 { background-color: #E26C5B; }   
     
 
 
