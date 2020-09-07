@@ -1128,9 +1128,9 @@ body.front .is-stuck.site-banner { padding: 31px 0 0; }
     Profil
 \* ------------------------------------------------------------ */
 
-.profil { padding: 70px 0; }
+.profil { padding: 70px 0; margin-top: 30px; }
 .profil .inside { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; color: #152345; }
-.profil .inside:before { content: ''; display: block; width: 40.1%; height: 573px; background: url(images/profil-image1.jpg) center no-repeat; background-size: cover; }
+.profil .inside:before { content: ''; display: block; width: 40.1%; height: 500px; background: url(images/profil-image1.jpg) center no-repeat; background-size: cover; }
 
 .profil .block-content { width: 59.9%; padding-left: 40px; }
 
@@ -2909,3 +2909,18 @@ body.page-events #zone3 {display: none; }
 .article_list .intro img { margin: auto 0; float: none; margin-bottom: 30px; border-radius: 10px!important; }    
 .front .block-page .focus1+.focus1 a.externe.lien1 { background-color: #E26C5B; }   
     
+
+
+
+
+/* ------------------------------------------------------------ *\
+    Profil alt
+\* ------------------------------------------------------------ */
+
+.profil { padding: 70px 0; margin-top: 30px; }
+.profil .inside { position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; color: #152345; align-items: center; }
+.profil .inside:before { content: ''; display: block; width: 480px; height: 480px; background: url(images/all4pack-report-2022-fr.jpg) center no-repeat; background-size: cover; }
+.profil .block-content { width: 600px; padding-left: 60px; }
+
+html:lang(en) .profil .inside:before { background: url(images/all4pack-report-2022-en.jpg) center no-repeat; }
+
