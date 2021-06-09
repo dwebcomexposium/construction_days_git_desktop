@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFF00;}
+	.st1{fill:none;stroke:#2E2D2C;stroke-width:2.5837;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#FFFFFF;stroke-width:10.3346;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:7.751;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:10.3346;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#2E2D2C;stroke-width:2.5837;stroke-linecap:square;stroke-linejoin:bevel;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#2E2D2C;stroke-width:2.5837;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:10;}
+</style>
+<circle class="st0" cx="49.5" cy="49.5" r="48.5"/>
+<g>
+	<g>
+		
+			<ellipse transform="matrix(0.1791 -0.9838 0.9838 0.1791 -5.7153 88.8596)" class="st1" cx="50.39" cy="47.85" rx="21.85" ry="21.85"/>
+		<g>
+			<circle class="st2" cx="50.64" cy="56.15" r="4.25"/>
+			<path class="st3" d="M59.56,73.08v-5.39c0-1.9-1.54-3.45-3.45-3.45H45.17c-1.9,0-3.45,1.54-3.45,3.45v5.39"/>
+		</g>
+		<g>
+			<g>
+				<circle class="st4" cx="32.75" cy="30.82" r="4.25"/>
+				<path class="st4" d="M41.66,48.79v-6.42c0-1.9-1.54-3.45-3.45-3.45H27.28c-1.9,0-3.45,1.54-3.45,3.45v6.42H41.66z"/>
+			</g>
+			<g>
+				<circle class="st1" cx="32.75" cy="30.82" r="4.25"/>
+				<path class="st5" d="M41.66,48.79v-6.42c0-1.9-1.54-3.45-3.45-3.45H27.28c-1.9,0-3.45,1.54-3.45,3.45v6.42"/>
+				<line class="st6" x1="28.59" y1="44.43" x2="28.59" y2="48.79"/>
+				<line class="st6" x1="36.9" y1="48.79" x2="36.9" y2="44.43"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<circle class="st4" cx="68.39" cy="30.82" r="4.25"/>
+				<path class="st4" d="M77.31,48.79v-6.42c0-1.9-1.54-3.45-3.45-3.45H62.92c-1.9,0-3.45,1.54-3.45,3.45v6.42H77.31z"/>
+			</g>
+			<g>
+				<circle class="st1" cx="68.39" cy="30.82" r="4.25"/>
+				<path class="st5" d="M77.31,48.79v-6.42c0-1.9-1.54-3.45-3.45-3.45H62.92c-1.9,0-3.45,1.54-3.45,3.45v6.42"/>
+				<line class="st6" x1="64.23" y1="44.43" x2="64.23" y2="48.79"/>
+				<line class="st6" x1="72.55" y1="48.79" x2="72.55" y2="44.43"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<circle class="st4" cx="50.64" cy="56.15" r="4.25"/>
+				<path class="st4" d="M59.56,74.12v-6.42c0-1.9-1.54-3.45-3.45-3.45H45.17c-1.9,0-3.45,1.54-3.45,3.45v6.42H59.56z"/>
+			</g>
+			<g>
+				<circle class="st1" cx="50.64" cy="56.15" r="4.25"/>
+				<path class="st5" d="M59.56,74.12v-6.42c0-1.9-1.54-3.45-3.45-3.45H45.17c-1.9,0-3.45,1.54-3.45,3.45v6.42"/>
+				<line class="st1" x1="46.48" y1="69.76" x2="46.48" y2="74.12"/>
+				<line class="st1" x1="54.8" y1="74.12" x2="54.8" y2="69.76"/>
+				<line class="st5" x1="28.59" y1="45.67" x2="28.59" y2="48.79"/>
+				<line class="st5" x1="36.9" y1="48.79" x2="36.9" y2="45.67"/>
+				<line class="st5" x1="64.23" y1="45.67" x2="64.23" y2="48.79"/>
+				<line class="st5" x1="72.55" y1="48.79" x2="72.55" y2="45.67"/>
+				<line class="st5" x1="46.48" y1="71" x2="46.48" y2="74.12"/>
+				<line class="st5" x1="54.8" y1="74.12" x2="54.8" y2="71"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

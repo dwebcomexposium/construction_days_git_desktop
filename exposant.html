@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"2716c20c2a",applicationID:"24855911"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){d("pageHide",[p.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1209.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+        <meta http-equiv="content-language" content="fre-FR" />
+        <title>Construction Days</title>
+        <link rel="alternate" hreflang="en" href="https://construction-en.cms-cxpm.com/">
+        <link rel="alternate" hreflang="fr" href="https://construction.cms-cxpm.com/">
+        
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:title" content="Construction Days">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:url" content="https://construction.cms-cxpm.com/">
+        <meta name="twitter:image" content="https://construction.cms-cxpm.com/">
+                
+        <meta property="og:title" content="Construction Days">
+        <meta property="og:url" content="https://construction.cms-cxpm.com/">
+        <meta property="og:locale" content="fr_FR">
+        <meta property="og:site_name" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="https://construction.cms-cxpm.com/">
+        <meta name="apple-itunes-app" content="app-id=, affiliate-data=, app-argument=">
+        <meta name="google-play-app" content="app-id=">
+        <meta name="msApplication-ID" content="">
+        <meta property="og:type" content="website">
+        
+        <link rel="stylesheet" type="text/css" href="css.css" />
+
+        <link rel="apple-touch-icon" href="favicons/apple-touch-icon.png" type="image/png" sizes="180x180" />
+        <link rel="icon" href="favicons/favicon.ico" />
+        <link rel="icon" href="favicons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" href="favicons/favicon-32x32.png" sizes="32x32" />
+        <meta name="msapplication-TileImage" content="/theme/construction_days_git_desktop/favicons/mstile-144x144.png">
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+
+        <script>window.comexposium = {}</script>
+        <script src="js/4efebb8.js"></script>
+        
+        <script src="https://connect.prod.comexposium-webservices.com/js/loader.min.js"></script>
+        
+        <style type="text/css">
+            [data-server-rendered="true"] {
+                display: none;
+            }
+        </style>
+
+        <script data-cfasync="false" src="https://connect2.prod.comexposium-webservices.com/connect2Loader.js?1622459552"></script>
+        <script type="text/javascript">
+            window.comexposiumConnectContext = JSON.parse('{"locale":"fre-FR","lang":"fr","urlMap":[],"baseUrl":"https:\/\/construction.cms-cxpm.com","desktopBaseUrl":"https:\/\/construction.cms-cxpm.com","mobileBaseUrl":"","canonicalBaseUrl":"","404":"\/404.html","exhibition":{"id":"","metaData":{"title":"","description":"","keywords":""}},"byLang":{"fr":{"locale":"fre-FR","lang":"fr","urlMap":[],"baseUrl":"https:\/\/construction.cms-cxpm.com","desktopBaseUrl":"https:\/\/construction.cms-cxpm.com","mobileBaseUrl":"","canonicalBaseUrl":"","404":"\/404.html","exhibition":{"id":"","metaData":{"title":"","description":"","keywords":""}}},"en":{"locale":"eng-GB","lang":"en","urlMap":[],"baseUrl":"https:\/\/construction-en.cms-cxpm.com","desktopBaseUrl":"https:\/\/construction-en.cms-cxpm.com","mobileBaseUrl":"","canonicalBaseUrl":"","404":"\/404.html","exhibition":{"id":"","metaData":{"title":"","description":"","keywords":""}}}}}');
+        </script>
+
+    </head>
+                    
+    <body class="body-corpo catalogue " itemscope itemtype="http://schema.org/WebSite" data-location-path="1399593">
+        <span class="cookies" data-cookiesmsg="En poursuivant votre navigation, vous acceptez le dépôt de cookies destinés à assurer le bon fonctionnement et l’interactivité du site, personnaliser votre navigation, réaliser de la publicité ciblée adaptée à vos centres d’intérêts et mesurer l’audience du site. Pour en savoir plus et paramétrer les cookies." data-cookiesbtn="Accepter" data-cookieswhat="cliquez ici" data-cookieslink="/Footer/Information-concernant-l-utilisation-des-cookies"><!-- must be empty (just for cookies)!--></span>
+    
+        <div class="global-wrapper">
+            <header class="site-banner" role="banner">
+                <div class="header-bar">
+                    <div class="header-message">
+                        <p><strong>14 > 16 SEPTEMBRE 2021 - EUREXPO 6 LYON</strong></p>
+                    </div><!-- /.header-message -->
+                    <div class="header-links">
+                        <a href="mailto:communication@construction-dayxs.com">contact : communication@construction-dayxs.com</a>
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/all4pack/" class="">
+                                    <img src="images/instagram-white.svg" alt="Instagram" />    
+                                </a>
+                              </li>
+                            <li>
+                                <a href="https://www.facebook.com/ALL4PACK/">
+                                    <img src="images/facebook-white.svg" alt="Instagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/ALL4PACK">
+                                    <img src="images/twitter-white.svg" alt="Instagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UCiIs53H0XrFd2-Mkab7PCbw">
+                                    <img src="images/youtube-white.svg" alt="Instagram" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/all4pack-paris/">
+                                    <img src="images/linkedin-white.svg" alt="linkedin" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="inside">
+
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="" />
+                    </a>
+
+                    <!-- Nav secondaire -->
+                    <div class="quicklinks quicks">
+                        <ul class="ql-list unstyled">
+                            <li class="ql-item linkid870772">
+                                <a href="https://event.all4pack.com/2020/" class="btn-primary" target="_blank" onclick="return xt_click(this,'C','','::Espace_Exposants','S')">
+                                    <span class="txt-btn">Espace Exposants</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lang-switcher js-lang-switcher  " data-title="Sélectionnez votre langue">
+                        <ul class="ls-lang-list unstyled js-toggle-target" style="display: none;">
+                            <li class="ls-lang-item ls-lang-en">
+                                <a class="ls-lang-link" href="https://construction-en.cms-cxpm.com/">
+                                <abbr title="English (United Kingdom)">
+                                    en
+                                </abbr></a>
+                            </li>
+                            <li class="ls-lang-item ls-lang-fr is-active">
+                                <a class="ls-lang-link" href="#">
+                                <abbr title="Français (France)">
+                                    fr
+                                </abbr></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Navigation principale -->
+                    <nav class="main-navigation " role="navigation">
+                        <div class="mn-menu-line">
+                            <ul class="mn-menu mn-menu-lvl1 unstyled">
+                                <li class="mn-menu-item mn-item-lvl-1 mn-item-has-submenu mn-menu-item-870786">
+                                    <a class="mn-link" href="#" >
+                                        <span class="mn-link-text" data-location-id="1399680">Le Salon</span>
+                                    </a>
+                                    <ul class="mn-menu-submenu mn-menu-lvl2 unstyled">
+                                        <li class="mn-menu-item mn-item-lvl-2  mn-menu-item-870787">
+                                            <a class="mn-link" href="partenaires.html" target="_self">
+                                                <span class="mn-link-text" data-location-id="1399681">Partenaires</span>
+                                            </a>
+                                        </li>
+                                        <li class="mn-menu-item mn-item-lvl-2  mn-menu-item-870988">
+                                            <a class="mn-link" href="actualites.html" target="_self">
+                                                <span class="mn-link-text" data-location-id="1399878">
+                                                        Actualités
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mn-menu-item mn-item-lvl-1 mn-item-has-submenu mn-menu-item-870970">
+                                    <a class="mn-link" href="#" >
+                                        <span class="mn-link-text" data-location-id="1399863">
+                                            Exposer
+                                        </span>
+                                    </a>
+                                    <ul class="mn-menu-submenu mn-menu-lvl2 unstyled">
+                                        <li class="mn-menu-item mn-item-lvl-2  mn-menu-item-871011">
+                                            <a class="mn-link" href="https://construction.cms-cxpm.com/Exposer/Materiaux" target="_self">
+                                                <span class="mn-link-text" data-location-id="1399901">
+                                                    Matériaux : une offre pour chaque filière
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mn-menu-item mn-item-lvl-1 mn-item-has-submenu mn-menu-item-870937">
+                                    <a class="mn-link" href="#" >
+                                        <span class="mn-link-text" data-location-id="1399830">
+                                            Visiter
+                                        </span>
+                                    </a>
+                                    <ul class="mn-menu-submenu mn-menu-lvl2 unstyled">
+                                        <li class="mn-menu-item mn-item-lvl-2  mn-menu-item-870945">
+                                            <a class="mn-link" href="https://construction.cms-cxpm.com/Visiter/Pourquoi-visiter-ALL4PACK-Paris" target="_self">
+                                                <span class="mn-link-text" data-location-id="1399838">
+                                                    Pourquoi visiter ALL4PACK Paris ?
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="mn-menu-item mn-item-lvl-2  mn-menu-item-870946">
+                                            <a class="mn-link" href="https://construction.cms-cxpm.com/All-4-Pack-2020/Catalogue/Liste-des-exposants" target="_self">
+                                                <span class="mn-link-text" data-location-id="1369900">
+                                                    Liste des exposants 2020
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="mn-menu-item mn-item-lvl-2  mn-menu-item-870939">
+                                            <a class="mn-link" href="https://construction.cms-cxpm.com/Visiter/Votre-visite-sur-mesure" target="_self">
+                                                <span class="mn-link-text" data-location-id="1399832">
+                                                    Votre visite sur mesure
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="mn-menu-item mn-item-lvl-2  mn-menu-item-870947">
+                                            <a class="mn-link" href="https://construction.cms-cxpm.com/All-4-Pack-2020/Infos-pratiques/FAQ/FAQ-Visiteur" target="_self">
+                                                <span class="mn-link-text" data-location-id="1366252">
+                                                    FAQ Visiteurs
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="mn-menu-item mn-item-lvl-2  mn-menu-item-870948">
+                                            <a class="mn-link" href="https://construction.cms-cxpm.com/Visiter/contacts-visiteurs" target="_self">
+                                                <span class="mn-link-text" data-location-id="1399841">
+                                                    Contacts
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="mn-menu-item mn-item-lvl-1  mn-menu-item-870971">
+                                    <a class="mn-link" href="exposants.html">
+                                        <span class="mn-link-text" data-location-id="1399864">
+                                            Liste des Exposants
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mn-menu-item mn-item-lvl-1  mn-menu-item-870972">
+                                    <a class="mn-link" href="/Infos-pratiques" target="_self">
+                                        <span class="mn-link-text" data-location-id="1399865">
+                                            Infos pratiques
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="mn-menu-item mn-item-lvl-1 mn-item-has-submenu mn-menu-item-870949">
+                                    <a class="mn-link" href="#" >
+                                        <span class="mn-link-text" data-location-id="1399842">
+                                            Presse
+                                        </span>
+                                    </a>
+                                    <ul class="mn-menu-submenu mn-menu-lvl2 unstyled">
+                                        <li class="mn-menu-item mn-item-lvl-2  mn-menu-item-870952">
+                                            <a class="mn-link" href="https://construction.cms-cxpm.com/Presse/Communiques-de-presse-d-ALL4PACK" target="_self">
+                                                <span class="mn-link-text" data-location-id="1399845">
+                                                    Communiqués de presse d'ALL4PACK
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="mn-menu-item mn-item-lvl-2  mn-menu-item-870950">
+                                            <a class="mn-link" href="https://construction.cms-cxpm.com/Presse/Communiques-de-presse-des-exposants" target="_self">
+                                                <span class="mn-link-text" data-location-id="1399843">
+                                                    Communiqués de presse des exposants
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="mn-menu-item mn-item-lvl-2  mn-menu-item-870969">
+                                            <a class="mn-link" href="https://construction.cms-cxpm.com/Presse/Vos-contacts-presse" target="_self">
+                                                <span class="mn-link-text" data-location-id="1399862">
+                                                    Vos contacts presse
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+                            
+            <main id="main" class="catalogue" >
+                <div class="site-wrapper wrapper">
+                    <div class="site-content">
+                        <article>
+                            <div class="article-header">
+                                <h1>CAT</h1>
+                                <ul class="breadcrumb"><li><a href="index.html">Home</a></li><li><a href="exposants.html">Liste des exposants</a></li><li>CAT</li></ul>
+                            </div>
+                            <div class="article-content">
+                                <div class="article-navigation">
+                                    <div class="article-navigation-back">
+                                        <a href="exposants.html" class="back">Retour</a>
+                                    </div>
+                                    <div class="article-navigation-prev-next">
+                                        <a href="exposant.html" class="prev">Exposant précédent</a>
+                                        <a href="exposant.html" class="next">Exposant suivant</a>
+                                    </div>
+                                </div>
+                                <div class="exposant">
+                                    <div class="exposant-infos">
+                                        <div class="exposant-logo"><img src="images/construction-days/exposant.png" alt="Logo exposant" /></div>
+                                        <div class="exposant-coordonnees">
+                                            <p class="exposant-name">CAT</p>
+                                            <p class="exposant-adress">
+                                                10 avenue du Fief<br />
+                                                BP 79161<br />
+                                                Saint Ouen L'Aumône<br />
+                                                95075 Cergy Pontoise Cedex<br />
+                                                FRANCE<br />
+                                            </p>
+                                            <a href="" class="exposant-web">https://www.cat.fr</a>
+                                        </div>
+                                        <div class="exposant-stands">
+                                            <p class="title">Stands :</p>
+                                            <div class="exposant-stand">
+                                                <p class="location"><i class="icon-catal icon-catal-localisation"></i> 6 B 387</p>
+                                                <p>Emballages & contenants tous marchés / Matières 1ères,  consommables / Pavillons</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="exposant-activites">
+                                        <p class="title">Activé :</p>
+                                        <ul>
+                                            <li>Isolation par l‘extérieur</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <aside>
+                            <div class="inside">
+                                <p class="aside-title"><span>DECOUVREZ D‘AUTRES EXPOSANTS</span></p>
+                                <div class="pl-item-group">
+                                    <div class="pl-item" style="height: 262px;"><a href="javascript:;"><img src="images/partenaires/Batiactu logo.png" alt="Batiactu"></a><div class="pl-item-content"></div></div>
+                                    <div class="pl-item" style="height: 262px;"><a href="javascript:;"><img src="images/partenaires/Batiweb logo.jpg" alt="Batiweb"></a><div class="pl-item-content"></div></div>
+                                    <div class="pl-item" style="height: 262px;"><a href="javascript:;"><img src="images/partenaires/Bétons Le Magazine logo.png" alt="Bétons le magazine"></a><div class="pl-item-content"></div></div>
+                                    <div class="pl-item" style="height: 262px;"><a href="javascript:;"><img src="images/partenaires/chantiers-de-france-logo.png" alt="Chantiers de France"></a><div class="pl-item-content"></div></div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="site-footer" role="contentinfo">
+            <div class="inside">
+                <div class="socials">
+                    <h4 class="socials__title">#<strong>C</strong>onstruction<strong>D</strong>ays</h4><!-- /.socials__title -->
+                    <p><strong>SUR LES RÉSEAUX SOCIAUX</strong></p>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/all4pack/" class="">
+                                <img src="images/instagram-black.png" alt="Instagram" /> 
+                            </a>
+                          </li>
+                        <li>
+                            <a href="https://www.facebook.com/ALL4PACK/">
+                                <img src="images/facebook-black.png" alt="Facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/ALL4PACK">
+                                <img src="images/twitter-black.png" alt="Twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCiIs53H0XrFd2-Mkab7PCbw">
+                                <img src="images/youtube-black.png" alt="Youtube" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/company/all4pack-paris/">
+                                <img src="images/linkedin-black.png" alt="Linkedin" />
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- /.socials -->
+   
+                <div class="block block-small quicklinks qlfooter">
+                    <ul class="ql-list unstyled">
+                        <li class="ql-item linkid870777">
+                            <a href="/All-4-Pack-2020/Infos-pratiques/FAQ" class="btn-primary" target="_self" onclick="return xt_click(this,'C','','::Questions_frequentes','N')">
+                                <span class="txt-btn">Questions fréquentes</span>
+                            </a>
+                        </li>
+                        <li class="ql-item linkid870778">
+                            <a href="/All-4-Pack-2020/Footer/Plan-du-site" class="btn-primary" target="_self" onclick="return xt_click(this,'C','','::Plan_du_site','N')">
+                                <span class="txt-btn">Plan du site</span>
+                            </a>
+                        </li>
+                        <li class="ql-item linkid870779">
+                            <a href="/All-4-Pack-2020/Infos-pratiques/Nous-contacter" class="btn-primary" target="_self" onclick="return xt_click(this,'C','','::Contactez_nos_equipes','N')">
+                                <span class="txt-btn">Contactez nos équipes</span>
+                            </a>
+                        </li>
+                        <li class="ql-item linkid870780">
+                            <a href="/All-4-Pack-2020/Footer/Mentions-legales-et-CGU" class="btn-primary" target="_self" onclick="return xt_click(this,'C','','::Mentions_legales_et_C.G.U.','N')">
+                                <span class="txt-btn">Mentions légales et C.G.U.</span>
+                            </a>
+                        </li>
+                        <li class="ql-item linkid870781">
+                            <a href="/All-4-Pack-2020/Footer/protection-des-donnees" class="btn-primary" target="_self" onclick="return xt_click(this,'C','','::Protection_des_donnees','N')">
+                                <span class="txt-btn">Protection des données</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="https://www.comexposium.fr" target="_blank" class="footer-logo">
+                    <img src="images/comexposium.png" alt="" />
+                </a>
+            </div>
+        </footer>
+
+        <script src="js/e2d24d8.js"></script>
+
+        <script src="js/js.js"></script>
+        <script src="js/scripts.cd.js"></script>
+
+        <script src="js/e32e139.js"></script>
+
+        <script src="js/e8bc492.js"></script>
+        
+        <script>
+            // Start lazy mode
+            // There will be no '.cx-lazy-load' if the lazy-load is not activated
+            lozad('.cx-lazy-load').observe();
+        </script>
+                                
+        <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"2716c20c2a","applicationID":"24855911","transactionName":"ZQQBbUVXWEZRAkQMWVxOIlpDX1lbHwJfCFNKEQxKXkNbakoOXgBpWw8AVUJSUw==","queueTime":0,"applicationTime":1915,"atts":"SUMCGw1NS0g=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+    </body>
+</html>
