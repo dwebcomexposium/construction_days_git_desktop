@@ -18,6 +18,7 @@ if(document.getElementsByClassName('splide').length) {
     document.addEventListener( 'DOMContentLoaded', function () {
         var splide = new Splide( '.splide', {
             "type":"loop"
+            ,"pagination":false
             ,"classes":{}
         }).mount();
     });
@@ -195,7 +196,7 @@ $(function() {
 
     // Déplacement du breacrumb dans le bloc de titre
     var breadcrumb = $('.breadcrumb-nav');
-    var articletitle = $('.article-title h1, .contacts-list h1, .main-title-with-link > .main-title');
+    var articletitle = $('.article-title h1, .contacts-list h1, .main-title-with-link > h1.main-title');
     if (articletitle.length) {
         breadcrumb.insertAfter(articletitle);
     }
@@ -203,8 +204,16 @@ $(function() {
     // Cas particulier de la page des partenaire qui n'a pas de bloc titre (et pas de classe spécifique sur le body #yeah)
     else if ($('body').is('.page-rubric')) {
         articletitle = $('<div class="block block-page article-title"><div class="inside"></div></div>');
-        $('.block.partner').insertBefore(articletitle);
+        articletitle.insertBefore($('.block.partner').first());
         breadcrumb.appendTo(articletitle);
+    }
+
+    // Utilisation de l'image titre comme fond
+    var imgtitle = $('.article-title .inside img');
+    console.log("imagetitle", imgtitle.first().attr('src'));
+    if (imgtitle.length) {
+    	$('.site-wrapper').css('background-image', 'url(' + imgtitle.first().attr('src') + ')');
+    	imgtitle.hide();
     }
 
 });
