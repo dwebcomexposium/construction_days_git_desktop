@@ -187,6 +187,24 @@ jQuery(function(){
     this},r._applyDataApi=function(){var e={};t("[data-match-height], [data-mh]").each(function(){var o=t(this),n=o.attr("data-mh")||o.attr("data-match-height");n in e?e[n]=e[n].add(o):e[n]=o}),t.each(e,function(){this.matchHeight(!0)})};var s=function(e){r._beforeUpdate&&r._beforeUpdate(e,r._groups),t.each(r._groups,function(){r._apply(this.elements,this.options)}),r._afterUpdate&&r._afterUpdate(e,r._groups)};r._update=function(n,a){if(a&&"resize"===a.type){var i=t(window).width();if(i===e)return;e=i;
     }n?o===-1&&(o=setTimeout(function(){s(a),o=-1},r._throttle)):s(a)},t(r._applyDataApi);var h=t.fn.on?"on":"bind";t(window)[h]("load",function(t){r._update(!1,t)}),t(window)[h]("resize orientationchange",function(t){r._update(!0,t)})});
 
+// Traitements Contructions Days
 $(function() {
+
+    // Ajustement en hauteur
     $('.pl-item').matchHeight({"byRow":false});
+
+    // Déplacement du breacrumb dans le bloc de titre
+    var breadcrumb = $('.breadcrumb-nav');
+    var articletitle = $('.article-title h1, .contacts-list h1, .main-title-with-link > .main-title');
+    if (articletitle.length) {
+        breadcrumb.insertAfter(articletitle);
+    }
+    
+    // Cas particulier de la page des partenaire qui n'a pas de bloc titre (et pas de classe spécifique sur le body #yeah)
+    else if ($('body').is('.page-rubric')) {
+        articletitle = $('<div class="block block-page article-title"><div class="inside"></div></div>');
+        $('.block.partner').insertBefore(articletitle);
+        breadcrumb.appendTo(articletitle);
+    }
+
 });
