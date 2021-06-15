@@ -360,6 +360,7 @@ article .article-header { color:#fff; }
 
 /* breadcrumb */
 .breadcrumb-nav { /*padding:0;*/ margin-bottom:1.5em !important; color:white; font-size: 12px; text-shadow: 2px 2px 4px #27282c; }
+.breadcrumb-nav .inside { padding:0; }
 .breadcrumb-nav a,
 .breadcrumb-nav a:hover { color:white; text-decoration: none; }
 .breadcrumb-nav li { display:inline; list-style-type: none; }
@@ -573,6 +574,7 @@ body.catalogue aside .aside-title { font-size: 20px; text-align: left; font-weig
 body.catalogue aside .aside-title span { display: inline-block; border-bottom: 1px solid black; }
 
 /* Exposant */
+/* Ne convient pas à la version du module de Construction Days
 .exposant { margin-top:40px; }
 .exposant-infos { display: flex; column-gap: 35px; font-size: 14px; line-height: 1.25; }
 .exposant-logo,
@@ -590,6 +592,7 @@ body.catalogue aside .aside-title span { display: inline-block; border-bottom: 1
 .exposant-activites .title { font-size: 20px; font-weight: bold; margin-bottom: .5em !important; }
 .exposant-activites ul { display:inline-block; margin:0 !important; }
 .exposant-activites li { font-size: 16px; font-weight: 400; background:#ffff00; padding:5px 15px !important; }
+*/
 
 /* Partenaires (maquette) */
 .pl-item-group { display:grid; grid-template-columns: repeat(4, 1fr); grid-gap: 30px; padding:20px 0; align-items: center; }
@@ -777,7 +780,7 @@ body.article_list .list-articles .main-title-with-link + .cxp-pagination {
   .article-header { padding:0 20px; }
   body.article article h1, article h1, body.catalogue h1 { margin-bottom: .25em;}
   .breadcrumb { margin-bottom:.25em !important;}
-  article .article-content { border-radius: 0; padding:30px 20px; }
+  .article-content { border-radius: 0; padding:30px 20px; }
   .article-content .content-block-image-full-width { margin-left:-10px; margin-right: -10px;}
   article div.content-block-accroche-image { background-size: 25% auto; padding-left:calc(25% + 20px); }
   .article-content blockquote { margin-left:0; margin-right: 0;}
@@ -813,6 +816,13 @@ body.article_list .list-articles .main-title-with-link + .cxp-pagination {
   /* partenaires */
   .pl-item-group { grid-template-columns: repeat(2, 1fr);}
 
+  /* Ajustements */
+  .offre { padding:40px 0; }
+  .offre .inside { display: flex; flex-direction: column; }
+  .offre ul { margin:0; display:block; padding:0; }
+  .offre ul li { display: block; width: 100%; height:auto; transform: none; margin:.5em 0; transform:none !important; }
+  .article-content { border-radius: 0; padding:30px 20px; }
+
 }
 
 /* Adaptations tout petits écrans */
@@ -832,11 +842,22 @@ body.article_list .list-articles .main-title-with-link + .cxp-pagination {
   .actus .la-column .la-item-header { width:100%; }
   .actus .la-column .la-item-img { width: 100%; border-radius: 10px 10px 0 0; }
   .actus .la-column .la-item-content { width: 100%; border-radius: 0 0 10px 10px; }
+  .actus .la-column .la-item-header a { min-height: 140px; border-radius: 10px 10px 0 0 ;}
   .site-footer .newsletter-form { padding: 20px 0 40px 20px; }
   .socials li a { width:40px; height:40px; }
   .site-content article { padding-top: 20px;}
-  .article-title .at-main-title, .faq-main-title, body.error404 h1, body.search h1, body.catalogue h1, body.partner h1, body.sitemap h1, body.page-events h1,
-  body.article article h1, article h1, body.catalogue h1 { font-size:30px; }
+  .article-title .at-main-title,
+  .faq-main-title,
+  body.error404 h1,
+  body.search h1,
+  body.catalogue h1,
+  body.partner h1,
+  body.sitemap h1,
+  body.page-events h1,
+  body.article article h1,
+  article h1,
+  body.catalogue h1,
+  .main-title-with-link > h1.main-title { font-size:30px; }
   article .article-share li { max-width: 20%; margin:0 5px; }
   article div.content-block-accroche-auteur { padding-left:40px; }
   article .content-block-accroche-auteur > img { position: initial; display: block; float: left; margin:0 10px 10px 0; }
@@ -846,4 +867,37 @@ body.article_list .list-articles .main-title-with-link + .cxp-pagination {
   .article-navigation { padding:10px; text-align: right;}
   .article-content .cl-content { flex-direction: column; }
   .article-content .cl-item { width:100%; margin:0 0 20px 0; }
+  .edito.slider { background:#000; }
+  .edito.slider .inside { padding:0; }
+  .ctas a { display: block; margin: 0; }
+  .ctas a + a { margin:15px 0 0 0; }
+  .actus .la-column .la-item-header a { min-height: 140px; border-radius: 10px 10px 0 0 ;}
+  body.article .article-wrapper,
+  body.contact .block.contacts-list,
+  body.page-rubric #zone2,
+  body.article_list .list-articles,
+  body.article.missing-banner .article-wrapper,
+  body.contact.missing-banner .block.contacts-list { padding-top:30px; }
+  .main-title-with-link { padding:0 20px; }
+  body.article_list .list-articles .intro { padding:30px; border-radius:0; }
+  body.article_list .list-articles .cxp-pagination { padding:0 30px; }
+  body.article_list .list-articles .la-list { display:flex; flex-direction: column; grid-gap:0; }
+  .page-rubric .partner { padding:30px; border-radius:0; }
+  .page-rubric .partner .inside { padding:0; }
+  .page-rubric .pg-item-group { grid-template-columns: repeat(2, 1fr); }
+  .page-rubric .partner .main-title-with-link { padding:0; }
+  .an-item-link .an-item-illust-wrapper { display:none; }
+  .article-navigation .inside { padding:0; }
+  .an-item { width:100%; }
+  .an-item-illust-wrapper + .an-item-content, .an-item-content:not(:last-child) { margin:0; font-size:14px; }
+  .an-item-title { font-size:13px; margin-bottom:.8em; }
+  .an-item-illust-wrapper + .an-item-content,
+  .an-item-content:not(:last-child) { padding:10px 10px 45px; }
+  .contacts-list .intro { padding:10px 0; }
+  .contacts-list .cl-content { flex-direction: column; padding:0; }
+  .contacts-list .cl-item { width:100%; margin:10px 0; }
+  body.article_list .list-articles .main-title-with-link + .cxp-pagination { padding:30px; border-radius:0; }
+  .list-articles .grid-la-list { flex-direction: column; padding:0; }
+  .list-articles .gla-item { width:100%; margin:10px 0 20px 0; }
+  .list-articles .gla-item-content { min-height:30px; }
 }
