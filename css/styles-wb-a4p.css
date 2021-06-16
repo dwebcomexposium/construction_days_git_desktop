@@ -2925,3 +2925,5 @@ body.page-events #zone3 {display: none; }
 html:lang(en) .profil .inside:before { background: url(images/all4pack-report-2022-en.jpg) center no-repeat; }
 
 .node1400564 .article-content { display: grid; }
+
+.node1400275 #zone2 > div > div.article-content > p.txtcenter { display: flex; flex-direction: column; align-items: center; }
