@@ -901,3 +901,8 @@ body.article_list .list-articles .main-title-with-link + .cxp-pagination {
   .list-articles .gla-item { width:100%; margin:10px 0 20px 0; }
   .list-articles .gla-item-content { min-height:30px; }
 }
+
+span.CatalogResultsTitle-subtitle.textAccentOpacity {
+    display: none;
+    visibility: hidden;
+}
