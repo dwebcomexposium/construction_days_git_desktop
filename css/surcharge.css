@@ -906,3 +906,8 @@ span.CatalogResultsTitle-subtitle.textAccentOpacity {
     display: none;
     visibility: hidden;
 }
+
+/*cacher pagination New catalogue 2021*/
+#catalog-v2 .CatalogResults {
+    display: none;
+}
