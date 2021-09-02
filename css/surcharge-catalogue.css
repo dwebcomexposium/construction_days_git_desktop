@@ -6,9 +6,9 @@
     vertical-align: top;
     position: relative;
     width: calc(50% - 55px);
-    min-height: 0px;
-    margin: 0 0 0px -3px;
-    box-shadow: none;
+    min-height: 0px !important;
+    margin: 0 !important;
+    box-shadow: none !important;
     border-radius: 10px;
     padding: 10px 20px 10px 150px;
     background-repeat: no-repeat;
