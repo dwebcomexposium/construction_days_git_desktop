@@ -857,6 +857,7 @@ body.article_list .list-articles .main-title-with-link + .cxp-pagination {
   body.article article h1,
   article h1,
   body.catalogue h1,
+  body.contact h1,
   .main-title-with-link > h1.main-title { font-size:30px; }
   article .article-share li { max-width: 20%; margin:0 5px; }
   article div.content-block-accroche-auteur { padding-left:40px; }
@@ -886,9 +887,10 @@ body.article_list .list-articles .main-title-with-link + .cxp-pagination {
   .page-rubric .partner .inside { padding:0; }
   .page-rubric .pg-item-group { grid-template-columns: repeat(2, 1fr); }
   .page-rubric .partner .main-title-with-link { padding:0; }
+  .an-list { flex-direction: column; }
   .an-item-link .an-item-illust-wrapper { display:none; }
   .article-navigation .inside { padding:0; }
-  .an-item { width:100%; }
+  .an-item { width:100%; margin:10px 0; }
   .an-item-illust-wrapper + .an-item-content, .an-item-content:not(:last-child) { margin:0; font-size:14px; }
   .an-item-title { font-size:13px; margin-bottom:.8em; }
   .an-item-illust-wrapper + .an-item-content,
@@ -899,7 +901,7 @@ body.article_list .list-articles .main-title-with-link + .cxp-pagination {
   body.article_list .list-articles .main-title-with-link + .cxp-pagination { padding:30px; border-radius:0; }
   .list-articles .grid-la-list { flex-direction: column; padding:0; }
   .list-articles .gla-item { width:100%; margin:10px 0 20px 0; }
-  .list-articles .gla-item-content { min-height:30px; }
+  .list-articles .gla-item-content { min-height:30px; border-radius: 0 0 10px 10px; }
 }
 
 span.CatalogResultsTitle-subtitle.textAccentOpacity {
