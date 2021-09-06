@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-.catalogue aside li {
+#catalog-v2 aside li {
     display: inline-block;
     vertical-align: top;
     position: relative;
